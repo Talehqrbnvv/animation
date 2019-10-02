@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.spinner{
+width: 200px;
+height: 200px;
+background-color: black;
+margin: 200px auto;
+position: relative;
+}
+.spin{
+    animation-name: numune;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    background-color: wheat;
+    width: 20px;
+    height: 20px;
+}
+.spin1{
+    animation-name: numune1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    background-color: wheat;
+    width: 20px;
+    height: 20px;
+    
+}
+@keyframes numune{
+    0%{
+    top: 0;
+    left: 0;
+    transform: scale(1) rotate(0);
+
+    }
+    25%{
+    top: 0px;
+    left: 80px;
+    transform: scale(0.7) rotate(90deg)
+     
+    }
+    50%{
+    top: 80px;
+    left: 80px;
+    transform: scale(1) rotate(180deg);
+     
+    }
+    75%{
+    top: 80px;
+    left: 0px;
+    transform: scale(0.7) rotate(270deg)
+   
+    }
+    100%{
+    top: 0;
+    left: 0;
+    transform: scale(1) rotate(360deg)
+   
+    }
+}
+@keyframes numune1{
+     0%{
+        top: 80px;
+        left: 80px;
+        transform: scale(1) rotate(0)
+ 
+        }
+        25%{
+        top: 80px;
+        left: 0px;
+        transform: scale(0.7) rotate(90deg)
+    
+        }
+        50%{
+        top: 0px;
+        left: 0px;
+        transform: scale(1) rotate(180deg)
+ 
+        }
+        75%{
+        top: 0px;
+        left: 80px;
+        transform: scale(0.7) rotate(270deg)
+   
+        }
+        100%{
+        top: 80px;
+        left: 80px;
+        transform: scale(1) rotate(360deg)
+
+        }
+}
